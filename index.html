@@ -17,32 +17,29 @@
     <header class="titulo">Blackjack</header>
 
     <div class="row mt-2">
-      <div class="col text-center">
-        <button class="btn btn-success">Nuevo Juego</button>
-        <button class="btn btn-primary">Pedir Carta</button>
-        <button class="btn btn-danger">Plantarse</button>
+      <div class="col buttons text-center">
+        <button id="btnNuevo" class="btn btn-success">Nuevo Juego</button>
+        <button id="btnPedir" class="btn btn-primary">Pedir Carta</button>
+        <button id="btnDetener" class="btn btn-danger">Plantarse</button>
       </div>
     </div>
 
     <div class="row container">
       <div class="col">
-        <h1>Jugador 1 - <small>0</small></h1>
-        <div id="jugador-cartas">
-          <img class="carta" src="/assets/cartas/2C.png" alt="" />
-        </div>
+        <h1>Jugador - <small>0</small></h1>
+        <div id="jugador-cartas"></div>
       </div>
     </div>
 
     <div class="row container mt-2">
       <div class="col">
-        <h1>Computadora 1 - <small>0</small></h1>
-        <div id="computadora-cartas">
-          <img class="carta" src="/assets/cartas/3C.png" alt="" />
-        </div>
+        <h1>Computadora - <small>0</small></h1>
+        <div id="computadora-cartas"></div>
       </div>
     </div>
 
     <script src="assets/js/underscore-umd-min.js"></script>
     <script src="assets/js/juego.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
